@@ -48,3 +48,10 @@ app.post('/login', (req, res) => {
 app.listen(3000, () => {
     console.log('Servidor rodando em http://localhost:3000');
 });
+
+
+/*
+Tem várias maneiras de explorar o código apliquei duas delas que seria "' OR ' 1'='1" na senha e usuário aplicando
+uma condição verdadeira sempre em ambos assim liberando o login mas tambem é possivel explorar de uma forma mais eficaz
+e utilizar "' OR 1=1 --" que aplica a condição verdadeira no usuário e ignora o resto da consulta com o comentário "--"
+*/
